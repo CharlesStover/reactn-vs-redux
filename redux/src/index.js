@@ -22,7 +22,7 @@ const demoReducer = (state = INITIAL_DEMO_STATE, action) => {
         data: action.response
       };
 
-    case 'INCREASE_X':
+    case 'INCREMENT_X':
       return {
         ...state,
         x: state.x + 1

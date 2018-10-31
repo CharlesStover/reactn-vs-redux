@@ -126,8 +126,8 @@ The production size in bytes measures how many bytes are contained in the produc
 
 | Application | Size    | Size Diff.       |
 | ----------- | ------- | ---------------- |
-| reactn      | 531,736 | -80,254 (-13.1%) |
-| redux       | 611,990 | +80,254 (+15.1%) |
+| reactn      | 531,736 | -80,256 (-13.1%) |
+| redux       | 611,992 | +80,256 (+15.1%) |
 
 Comparisons were determined using `ls -r | measure -s Length` in Windows PowerShell after building the application using `yarn build`.
 
