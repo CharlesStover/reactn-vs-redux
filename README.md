@@ -124,13 +124,13 @@ Converting from ReactN to Redux will decrease your production memory by 0.7%.
 
 The production size in bytes measures how many bytes are contained in the production-ready bundle that the end user downloads.
 
-| Application | Size    | Size Diff.       |
-| ----------- | ------- | ---------------- |
-| reactn      | 531,736 | -80,256 (-13.1%) |
-| redux       | 611,992 | +80,256 (+15.1%) |
+| Application | Size w/ .map  | Size Diff. w/ .map | Size w/o .map) | Size Diff. w/o .map |
+| ----------- | ------------- | ------------------ | -------------- | ------------------- |
+| reactn      | 531,736       | -80,256 (-13.1%)   | 141,142        | -10,512 (-6.9%)     |
+| redux       | 611,992       | +80,256 (+15.1%)   | 151,654        | +10,512 (+7.4%)     |
 
-Comparisons were determined using `ls -r | measure -s Length` in Windows PowerShell after building the application using `yarn build`.
+Comparisons were determined using `ls -r | measure -s Length` in Windows PowerShell after building the application using `yarn build` both including and excluding the `.map` files.
 
-Converting from Redux to ReactN will decrease your production bundle size by 13.1%.
+Converting from Redux to ReactN will decrease your production bundle size by 13.1% or 6.9%, depending on if you consider `.map` files as a part of your bundle size.
 
-Converting from ReactN to Redux will increase your production bundle size by 15.1%.
+Converting from ReactN to Redux will increase your production bundle size by 15.1% or 7.4%, depending on if you consider `.map` files as a part of your bundle size.
