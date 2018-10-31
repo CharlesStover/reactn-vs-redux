@@ -124,10 +124,10 @@ Converting from ReactN to Redux will decrease your production memory by 0.7%.
 
 The production size in bytes measures how many bytes are contained in the production-ready bundle that the end user downloads.
 
-| Application | Size    | Size Diff.       | CRA Diff.         |
-| ----------- | ------- | ---------------- | ----------------- |
-| reactn      | 531,736 | -80,254 (-13.1%) | + 66,164 (+14.2%) |
-| redux       | 611,990 | +80,254 (+15.1%) | +146,418 (+31.4%) |
+| Application | Size    | Size Diff.       |
+| ----------- | ------- | ---------------- |
+| reactn      | 531,736 | -80,254 (-13.1%) |
+| redux       | 611,990 | +80,254 (+15.1%) |
 
 Comparisons were determined using `ls -r | measure -s Length` in Windows PowerShell after building the application using `yarn build`.
 
